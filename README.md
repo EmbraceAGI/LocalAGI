@@ -34,7 +34,7 @@ python local_agi.py
 
 成功运行效果图：
 
-[LocalAGI](imgs/LocalAGI_run1.jpg)
+![LocalAGI](imgs/LocalAGI_run1.jpg)
 
 
 ## 致谢
