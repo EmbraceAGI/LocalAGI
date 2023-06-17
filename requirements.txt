@@ -1,0 +1,17 @@
+protobuf
+transformers==4.27.1
+cpm_kernels
+torch>=1.10
+gradio
+mdtex2html
+sentencepiece
+accelerate
+argparse==1.4.0
+chromadb==0.3.21
+pre-commit>=3.2.0
+python-dotenv==1.0.0
+tiktoken==0.3.3
+langchain
+openai
+fastapi
+uvicorn
