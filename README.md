@@ -6,7 +6,9 @@
 
 - ✅ LLM 默认选用 [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B), 可选 LLaMA。
 - ✅ Embedding 默认选用 [GanymedeNil/text2vec-large-chinese](https://huggingface.co/GanymedeNil/text2vec-large-chinese/tree/main)
-- ✅ Prompt 全部使用中文方便国内用户使用
+- ✅ Prompt 全部使用中文，方便国内用户使用
+
+
 
 ## 用法
 
@@ -72,6 +74,14 @@ python local_agi_zh.py
 中文运行效果图：
 
 ![LocalAGI](imgs/LocalAGI_zh_run1.jpg)
+
+### 测试环境参考
+
+* ubuntu18.04
+* python3.8
+* GPU 3090 Ti + Cuda 11+
+
+**注意: 默认设置下 ChatGLM 占用大约 12G 左右显存， embedding 模型 text2vec-large-chinese 大约占用 3G 左右显存，最终大约共使用 15G 显存成功运行。可以使用量化 ChatGLM 版本降低显存需求。**
 
 ## 致谢
 
