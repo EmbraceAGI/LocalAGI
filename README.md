@@ -10,8 +10,16 @@
 
 ## 用法
 
+
 ### 配置环境
+下载代码
 ```
+git clone https://github.com/EmbraceAGI/LocalAGI
+```
+
+安装 python 包
+```
+cd LocalAGI
 pip install -r requirements.txt
 ```
 
