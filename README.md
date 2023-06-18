@@ -2,6 +2,12 @@
 
 基于 ChatGLM-6B 大模型的本地 AGI 实验。
 
+本项目可实现全部使用**开源**模型**离线私有部署**。本项目中:
+
+- ✅ LLM 默认选用 [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B), 可选 LLMDA。
+- ✅ Embedding 默认选用 [GanymedeNil/text2vec-large-chinese](https://huggingface.co/GanymedeNil/text2vec-large-chinese/tree/main)
+- ✅ Prompt 全部使用中文方便国内用户使用
+
 ## 用法
 
 ```
