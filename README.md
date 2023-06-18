@@ -10,6 +10,7 @@
 
 ## 用法
 
+### 配置环境
 ```
 pip install -r requirements.txt
 ```
@@ -34,6 +35,18 @@ curl -X POST "http://127.0.0.1:8001" \
 
 ### 运行 LocalAGI
 
+编辑 `.env` 中的配置, 尤其是下面几项
+```
+LLM_MODEL=chatglm-6b   # 使用的模型，chatglm-6b / llama
+
+# RUN CONFIG
+OBJECTIVE=如何完整全面的掌握英语   # 任务目标
+# For backwards compatibility
+# FIRST_TASK can be used instead of INITIAL_TASK
+INITIAL_TASK=列出任务清单     # 初始任务
+```
+
+运行代码
 ```
 python local_agi.py
 ```
@@ -42,6 +55,15 @@ python local_agi.py
 
 ![LocalAGI](imgs/LocalAGI_run1.jpg)
 
+如果希望使用中文，请编辑 `.env` 配置文件中的任务目标和初始任务为中文描述，使用 `local_agi_zh.py` 运行
+
+```
+python local_agi_zh.py
+```
+
+中文运行效果图：
+
+![LocalAGI](imgs/LocalAGI_zh_run1.jpg)
 
 ## 致谢
 
