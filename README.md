@@ -10,8 +10,8 @@
 
 ## 用法
 
-
 ### 配置环境
+
 下载代码
 ```
 git clone https://github.com/EmbraceAGI/LocalAGI
