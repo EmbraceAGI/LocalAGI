@@ -8,7 +8,8 @@
 - ✅ Embedding 默认选用 [GanymedeNil/text2vec-large-chinese](https://huggingface.co/GanymedeNil/text2vec-large-chinese/tree/main)
 - ✅ Prompt 全部使用中文，方便国内用户使用
 
-
+## 更新信息
+[2023/06/25] 默认使用 [ChatGLM2-6B](https://github.com/THUDM/ChatGLM2-6B)，ChatGLM-6B 的升级版本。ChatGLM2-6B 具有更强大的性能，更长的上下文，更高效的推理。推理速度相比初代提升了 42%，INT4 量化下，6G 显存支持的对话长度由 1K 提升到了 8K。
 
 ## 用法
 
@@ -86,4 +87,5 @@ python local_agi_zh.py
 ## 致谢
 
 * [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)
+* [chatglm2-6b](https://huggingface.co/THUDM/chatglm2-6b)
 * [babyagi](https://github.com/yoheinakajima/babyagi)

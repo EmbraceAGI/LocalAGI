@@ -3,3 +3,4 @@ baby_agi.py
 local_agi_api.py
 test_ChatGLM.py
 chroma
+baichuan_server.py

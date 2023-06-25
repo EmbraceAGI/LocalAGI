@@ -51,9 +51,9 @@ async def create_item(request: Request):
 
 
 if __name__ == '__main__':
-    CHATGLM_MODEL_PATH = os.getenv("CHATGLM_MODEL_PATH", "THUDM/chatglm-6b") 
-    # CHATGLM_MODEL_PATH = <local_path> or "THUDM/chatglm-6b" or "THUDM/chatglm-6b-int8" or "THUDM/chatglm-6b-int4"
-    tokenizer = AutoTokenizer.from_pretrained(f"{CHATGLM_MODEL_PATH}", revision="v1.1.0", trust_remote_code=True)
-    model = AutoModel.from_pretrained(f"{CHATGLM_MODEL_PATH}", revision="v1.1.0", trust_remote_code=True).half().cuda()
+    CHATGLM_MODEL_PATH = os.getenv("CHATGLM_MODEL_PATH", "THUDM/chatglm2-6b") 
+    # CHATGLM_MODEL_PATH = <local_path> or "THUDM/chatglm2-6b" or "THUDM/chatglm-6b-int8" or "THUDM/chatglm-6b-int4"
+    tokenizer = AutoTokenizer.from_pretrained(f"{CHATGLM_MODEL_PATH}", trust_remote_code=True)
+    model = AutoModel.from_pretrained(f"{CHATGLM_MODEL_PATH}", trust_remote_code=True).half().cuda()
     model.eval()
     uvicorn.run(app, host='0.0.0.0', port=8001, workers=1)
